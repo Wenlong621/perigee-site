@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy · Perigee</title>
+  <meta name="description" content="Privacy Policy for Perigee (Perigee Tasks / 近界)" />
+  <style>
+    :root {
+      --bg: #f6f4ef;
+      --ink: #1c1917;
+      --muted: #57534e;
+      --line: #e7e5e4;
+      --card: #fffcf7;
+      --accent: #0f766e;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      background: linear-gradient(180deg, #eef7f5 0%, var(--bg) 28%, var(--bg) 100%);
+      color: var(--ink);
+      line-height: 1.65;
+    }
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 48px 20px 80px;
+    }
+    .brand {
+      font-size: 13px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    h1 {
+      font-size: clamp(1.8rem, 4vw, 2.4rem);
+      line-height: 1.2;
+      margin: 0 0 8px;
+    }
+    .meta { color: var(--muted); font-size: 0.95rem; margin-bottom: 28px; }
+    .lang-switch {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 28px;
+    }
+    .lang-switch button {
+      border: 1px solid var(--line);
+      background: var(--card);
+      color: var(--ink);
+      border-radius: 999px;
+      padding: 8px 14px;
+      cursor: pointer;
+      font: inherit;
+    }
+    .lang-switch button[aria-pressed="true"] {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #fff;
+    }
+    section {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 22px 22px 8px;
+      margin-bottom: 16px;
+    }
+    h2 {
+      font-size: 1.15rem;
+      margin: 0 0 10px;
+    }
+    p, li { color: #292524; }
+    ul { padding-left: 1.2rem; }
+    a { color: var(--accent); }
+    .hidden { display: none; }
+    footer {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="brand">Perigee</div>
+    <h1 id="page-title">Privacy Policy</h1>
+    <p class="meta" id="page-meta">Effective date: November 17, 2026 · Operator: Wenlong Zhang (individual developer)</p>
+
+    <div class="lang-switch" role="group" aria-label="Language">
+      <button type="button" id="btn-en" aria-pressed="true">English</button>
+      <button type="button" id="btn-zh" aria-pressed="false">中文</button>
+    </div>
+
+    <div id="content-en">
+      <section>
+        <h2>1. Overview</h2>
+        <p>
+          This Privacy Policy describes how <strong>Perigee</strong> (also shown as
+          <strong>Perigee Tasks</strong> / <strong>近界</strong>; iOS Bundle ID
+          <code>app.perigee.ios</code>) collects, uses, stores, and shares information
+          when you use our iOS app, desktop app, and related cloud sync services.
+        </p>
+        <p>
+          We build Perigee as a personal productivity tool. We do not sell your personal
+          data, and we do not use your task content for advertising.
+        </p>
+      </section>
+
+      <section>
+        <h2>2. Information we collect</h2>
+        <p>Depending on how you use Perigee, we may process:</p>
+        <ul>
+          <li><strong>Account information</strong>: email address, authentication identifiers, and sign-in session data (including Sign in with Apple when enabled).</li>
+          <li><strong>Task and project data</strong>: titles, descriptions, statuses, priorities, due dates, repeat settings, subtasks, completion notes/history, archive state, and related timestamps.</li>
+          <li><strong>Cover images</strong>: images you upload or generate for tasks, and associated metadata (for example, whether a cover was uploaded or AI-generated).</li>
+          <li><strong>Technical / service data</strong>: approximate diagnostics needed to operate sync and security (for example, app version, device type at a high level, timestamps, and error logs processed by our infrastructure providers).</li>
+        </ul>
+        <p>You may use local/offline features without cloud sync. Cloud features require an account.</p>
+      </section>
+
+      <section>
+        <h2>3. How we use information</h2>
+        <ul>
+          <li>Provide core task management features.</li>
+          <li>Sync your data across devices you sign into with the same account.</li>
+          <li>Authenticate you and protect account access.</li>
+          <li>Store and display task cover images.</li>
+          <li>Improve reliability, troubleshoot issues, and meet legal obligations.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>4. Third-party services</h2>
+        <p>We use service providers to operate Perigee:</p>
+        <ul>
+          <li>
+            <strong>Supabase</strong> (database, authentication, file storage, realtime sync).
+            Task data, account data, and cover files needed for cloud sync are processed on Supabase infrastructure.
+            See <a href="https://supabase.com/privacy" target="_blank" rel="noopener">Supabase Privacy Policy</a>.
+          </li>
+          <li>
+            <strong>Apple</strong> for App Store distribution, Sign in with Apple (when used), push delivery (when enabled), and related platform services.
+          </li>
+          <li>
+            <strong>AI cover generation providers</strong> (currently including Pollinations or similar image-generation endpoints you choose to use in-app).
+            If you generate an AI cover, the prompt/title text and resulting image request are sent to that provider to create the image.
+            Do not include sensitive personal data in prompts or task titles used for generation.
+          </li>
+        </ul>
+        <p>
+          These providers process data only as needed to provide their services to us and are expected to protect it under their own policies and applicable law.
+        </p>
+      </section>
+
+      <section>
+        <h2>5. Data storage, transfers, and retention</h2>
+        <ul>
+          <li>Local device storage may keep a copy of your tasks for offline use.</li>
+          <li>Cloud-synced data is stored with our backend provider (Supabase) and may be processed in the regions offered by that provider.</li>
+          <li>We retain account and synced content while your account remains active.</li>
+          <li>If you delete your account, we delete or irreversibly de-identify associated cloud account data and synced content within a reasonable period, except where retention is required by law or for security/fraud prevention.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>6. Your choices and rights</h2>
+        <ul>
+          <li>Access and update your tasks directly in the app.</li>
+          <li>Sign out to stop cloud sync on a device.</li>
+          <li>Request account deletion in the app (Settings) once the feature is available, or contact us using the email below.</li>
+          <li>Depending on your location (for example under GDPR), you may have rights to access, correct, export, or delete personal data, and to object to or restrict certain processing.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>7. Children</h2>
+        <p>
+          Perigee is not directed to children under 13 (or the minimum age required in your country).
+          We do not knowingly collect personal information from children.
+        </p>
+      </section>
+
+      <section>
+        <h2>8. Security</h2>
+        <p>
+          We use industry-standard safeguards provided by our platform and backend providers
+          (including encrypted transport via HTTPS and access controls such as row-level security for user data).
+          No method of transmission or storage is 100% secure.
+        </p>
+      </section>
+
+      <section>
+        <h2>9. Changes</h2>
+        <p>
+          We may update this Privacy Policy from time to time. We will post the updated version on this page
+          and revise the effective date above. Continued use of Perigee after changes means you accept the updated Policy.
+        </p>
+      </section>
+
+      <section>
+        <h2>10. Contact</h2>
+        <p>
+          Privacy questions or data requests:<br />
+          Email: <a href="mailto:461901868@qq.com">461901868@qq.com</a><br />
+          Developer: Wenlong Zhang
+        </p>
+      </section>
+    </div>
+
+    <div id="content-zh" class="hidden">
+      <section>
+        <h2>1. 概述</h2>
+        <p>
+          本隐私政策说明 <strong>Perigee</strong>（商店名可能显示为
+          <strong>Perigee Tasks</strong> / <strong>近界</strong>；iOS Bundle ID
+          <code>app.perigee.ios</code>）在你使用 iOS App、桌面端及云同步服务时，
+          如何收集、使用、存储与共享信息。
+        </p>
+        <p>Perigee 是个人效率工具。我们不会出售你的个人数据，也不会把你的任务内容用于广告。</p>
+      </section>
+
+      <section>
+        <h2>2. 我们收集的信息</h2>
+        <ul>
+          <li><strong>账号信息</strong>：邮箱、认证标识、登录会话（启用时含 Sign in with Apple）。</li>
+          <li><strong>任务与项目数据</strong>：标题、描述、状态、优先级、截止日期、重复规则、子任务、完成备注/历史、归档状态及相关时间戳。</li>
+          <li><strong>头图</strong>：你上传或生成的任务头图及其来源信息（上传 / AI 生成）。</li>
+          <li><strong>技术与服务数据</strong>：为保障同步与安全所需的有限诊断信息（如应用版本、粗粒度设备类型、时间戳、错误日志等，经由基础设施服务商处理）。</li>
+        </ul>
+        <p>本地/离线功能可不登录使用；云同步功能需要账号。</p>
+      </section>
+
+      <section>
+        <h2>3. 我们如何使用信息</h2>
+        <ul>
+          <li>提供任务管理核心功能；</li>
+          <li>在同一账号登录的设备之间同步数据；</li>
+          <li>完成身份验证并保护账号安全；</li>
+          <li>存储与展示任务头图；</li>
+          <li>提升稳定性、排查问题，并履行法律义务。</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>4. 第三方服务</h2>
+        <ul>
+          <li>
+            <strong>Supabase</strong>：数据库、认证、文件存储、实时同步。
+            云同步所需的任务、账号与头图文件会在其基础设施上处理。
+            详见 <a href="https://supabase.com/privacy" target="_blank" rel="noopener">Supabase 隐私政策</a>。
+          </li>
+          <li><strong>Apple</strong>：App Store 分发、Sign in with Apple（如使用）、推送（如启用）等平台服务。</li>
+          <li>
+            <strong>AI 头图生成服务</strong>（当前可能包括 Pollinations 或你在应用内选用的同类图像生成接口）。
+            若你生成 AI 头图，相关提示词/标题与生成请求会发送给该服务以创建图片。
+            请勿在用于生成的标题或提示中填写敏感个人信息。
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>5. 存储、跨境与保留</h2>
+        <ul>
+          <li>设备本地可能保存任务副本以支持离线使用；</li>
+          <li>云端同步数据保存在后端服务商（Supabase）提供的区域；</li>
+          <li>账号存续期间保留账号与已同步内容；</li>
+          <li>删除账号后，我们将在合理期限内删除或不可逆地匿名化相关云端数据，法律要求或安全/反欺诈所需保留的除外。</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>6. 你的选择与权利</h2>
+        <ul>
+          <li>在应用内直接查看与修改任务；</li>
+          <li>退出登录以停止该设备云同步；</li>
+          <li>在设置中删除账号（功能上线后），或通过下方邮箱联系我们；</li>
+          <li>在适用法律（如 GDPR）下，你可能享有访问、更正、导出、删除等权利。</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>7. 儿童</h2>
+        <p>Perigee 不面向 13 岁以下（或你所在地区要求的更高年龄）儿童，我们不会故意收集儿童的个人信息。</p>
+      </section>
+
+      <section>
+        <h2>8. 安全</h2>
+        <p>
+          我们依托平台与后端服务商的常规安全能力（包括 HTTPS 传输加密、用户数据访问控制等）。
+          任何传输或存储方式都无法保证绝对安全。
+        </p>
+      </section>
+
+      <section>
+        <h2>9. 变更</h2>
+        <p>我们可能更新本政策，并在本页面发布更新后的版本与生效日期。你继续使用 Perigee 即表示同意更新后的政策。</p>
+      </section>
+
+      <section>
+        <h2>10. 联系我们</h2>
+        <p>
+          隐私问题或数据请求请联系：<br />
+          邮箱：<a href="mailto:461901868@qq.com">461901868@qq.com</a><br />
+          开发者：Wenlong Zhang
+        </p>
+      </section>
+    </div>
+
+    <footer>
+      © 2026 Wenlong Zhang · Perigee
+    </footer>
+  </main>
+
+  <script>
+    const btnEn = document.getElementById('btn-en');
+    const btnZh = document.getElementById('btn-zh');
+    const en = document.getElementById('content-en');
+    const zh = document.getElementById('content-zh');
+    const title = document.getElementById('page-title');
+    const meta = document.getElementById('page-meta');
+
+    function setLang(lang) {
+      const isZh = lang === 'zh';
+      en.classList.toggle('hidden', isZh);
+      zh.classList.toggle('hidden', !isZh);
+      btnEn.setAttribute('aria-pressed', String(!isZh));
+      btnZh.setAttribute('aria-pressed', String(isZh));
+      title.textContent = isZh ? '隐私政策' : 'Privacy Policy';
+      meta.textContent = isZh
+        ? '生效日期：2026年11月17日 · 运营者：Wenlong Zhang（个人开发者）'
+        : 'Effective date: November 17, 2026 · Operator: Wenlong Zhang (individual developer)';
+      document.documentElement.lang = isZh ? 'zh-CN' : 'en';
+    }
+
+    btnEn.addEventListener('click', () => setLang('en'));
+    btnZh.addEventListener('click', () => setLang('zh'));
+  </script>
+</body>
+</html>
